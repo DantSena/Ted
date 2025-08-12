@@ -1,0 +1,639 @@
+s/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY + BACKGROUND POLA */
+body {
+  background: linear-gradient(0deg, #070707, #010913, #070707);
+  color: #eee;
+  padding: 20px;
+  line-height: 1.6;
+  animation: fadeIn 2s ease-in;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(#ffffff22 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* HEADER home */
+.headerh {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  animation: slideDown 1s ease-out;
+  background-image: url("http://images.n3vgames.com/trainzportal/mytrainz/1012458/screenshots/441526/1000/My-Trainz-Screenshot-Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 260px;
+  color: #eee;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER tugas */
+.headert {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  animation: slideDown 1s ease-out;
+  background-image: url("m4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 260px;
+  color: #eee;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* HEADER konten */
+.headerk {
+  position: relative;
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.05);
+  animation: slideDown 1s ease-out;
+  background-image: url("http://images.n3vgames.com/trainzportal/mytrainz/1012458/screenshots/441526/1000/My-Trainz-Screenshot-Image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 260px;
+  color: #eee;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.65);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #ffffff;
+  animation: bouncee 1s infinite alternate;
+}
+
+header p {
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* LOGO */
+.logo {
+  text-align: center;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.7));
+}
+
+.logo svg {
+  width: 80px;
+  height: 80px;
+  fill: white;
+  margin: 0 auto;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  margin-top: 4px;
+  font-family: 'Segoe UI Semibold', 'Arial Black', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+/* NAVIGATION */
+nav {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 0;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  color: #eee;
+  padding: 6px 8px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: #00b8d9;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  outline: none;
+}
+
+nav ul li.has-submenu > a::after {
+  content: " +";
+  font-weight: 900;
+  margin-left: 4px;
+  color: #999;
+}
+
+.logos {
+  animation: zoomIn 1.5s ease;
+  size: 200cm;
+}
+
+/* INTRO */
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-left: 6px solid #ffffff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  animation: fadeIn 1s;
+}
+
+/* Tentangku*/
+.judul-intro {
+  font-family: monospace;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(255, 255, 255);
+  width: fit-content;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+
+/* INTROk */
+.asap {
+  font-size: 2.5em;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  animation: smokeEffect 5s ease-in-out infinite;
+  opacity: 0;
+  position: relative;
+}
+
+@keyframes smokeEffect {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-5px) scale(1.05);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15px) scale(1.1);
+    filter: blur(3px);
+  }
+}
+
+
+.profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ffffff;
+  animation: zoomIn 1.5s ease;
+}
+
+.intro div {
+  flex: 2;
+  min-width: 250px;
+  text-align: justify;
+}
+
+/* SECTION: Identitas Diri */
+.identity {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 16px;
+  margin: 2rem auto;
+  max-width: 1000px;
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.identity-left {
+  flex: 1 1 50%;
+  min-width: 280px;
+}
+
+.identity-left h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #4682B4;
+  padding-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.identity-left ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.identity-left li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+}
+
+.identity-left li strong {
+  color: #FF8C00;
+  font-weight: bold;
+}
+
+.identity-left a {
+  color: #87CEFA;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.identity-left a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.identity-right {
+  flex: 1 1 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  justify-items: center;
+  align-items: center;
+  padding-top: 1.2rem; /* jarak atas antar kolom kiri & gambar */
+}
+
+.identity-right img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.identity-right img:hover {
+  transform: scale(1.06);
+}
+
+.identity-right img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .identity {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .identity-right {
+    justify-content: center;
+  }
+
+  .identity-right img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Bagian Identitas Diri */
+.details {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem auto;
+  max-width: 800px;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.details h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  border-bottom: 2px solid #4682B4; /* biru tua */
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.details li {
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+
+.details li strong {
+  color: #FF8C00; /* orange untuk label */
+  font-weight: bold;
+}
+
+.details a {
+  color: #87CEFA; /* biru muda */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.details a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+/* QUOTES */
+.quotes {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-left: 6px solid #ffffff;
+  border-radius: 10px;
+  margin-bottom: 40px;
+  animation: fadeIn 1s;
+}
+
+.quotes blockquote {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/* Kutipan */
+.kut {
+  color: rgb(255, 206, 209);
+}
+
+/* PORTFOLIO & GAME */
+.portfolio, .game-content {
+  max-width: 900px;
+  margin: 0 auto 50px auto;
+}
+
+.portfolio h2,
+.game-content h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.card a {
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: #ccc;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #000000, #001f3f);
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #333333, #001a33);
+  box-shadow: 0 6px 14px rgba(255, 255, 255, 0.2);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header {
+    height: 180px;
+  }
+
+  .logo svg {
+    width: 60px;
+    height: 60px;
+  }
+
+  nav ul {
+    gap: 16px;
+    font-size: 0.75rem;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile {
+    margin-bottom: 15px;
+  }
+}
+
+/* grid */
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.garis {
+  border: none;
+  height: 5px;
+  background: white;
+  margin: 20px 0;
+  opacity: 1.3;
+}
+
+.timeline-item.left {
+  align-self: flex-start;
+  text-align: left;
+  border-left: 6px solid #ffffff;
+  border-right: none;
+  margin-bottom: 40px;
+  padding: 15px 25px;
+}
+
+.timeline-item.right {
+  align-self: flex-end;
+  text-align: right;
+  border-left: none;
+  border-right: 6px solid #ffffff;
+  margin-bottom: 40px;
+  padding: 15px 25px;
+}
+
+.timeline-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 6px solid #ffffff;
+  border-radius: 10px;
+  color: #fff;
+  animation: fadeIn 1s;
+  box-sizing: border-box;
+}
+
+.timeline-item.left {
+  align-self: flex-start;
+}
+
+.timeline-item.right {
+  align-self: flex-end;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  font-size: 1.3em;
+  color: #ffffff;
+}
+
+.timeline-item p {
+  margin: 10px 0 0;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+.timeline-title {
+  text-align: center;
+  font-size: 2em; /* Sesuaikan ukuran jika perlu */
+  margin: 40px 0 20px; /* Atur jarak atas dan bawah */
+  color: white; /* Sesuaikan warna */
+  margin-bottom: 40px;
+}
+
